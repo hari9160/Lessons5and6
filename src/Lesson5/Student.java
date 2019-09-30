@@ -71,6 +71,20 @@ public class Student {
         return (test1 + test2 + test3 / 3); 
     }
     
+    public String validateData(){ 
+        String em = null; 
+        if (name.equals("")) //then a name was not entered
+            em = "Name is required."; 
+        if (test1<0 || test1>100 || test2<0 || test3<0 || test3>100)
+            if (em == null) //then there has been no error yet
+                em = "At least 1 mark is out of the acceptable range"; 
+            else //add on to the message with += 
+                em += "\nAt least mark is out of the acceptable range"; 
+        if (em != null) //then we have an error so add the following line after it 
+            em += "\nPlease re-enter all the data\n"; 
+            return em; //return the error message, either as null or with a real message
+    }
+    
     //toString runs automaticall when you print an object 
     //all objects get a toString from parent Object class 
     //but you can make your own better version 
