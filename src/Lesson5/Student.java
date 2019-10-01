@@ -68,7 +68,7 @@ public class Student {
     }
     
     public int getAverage(){ 
-        return (test1 + test2 + test3 / 3); 
+        return ((test1 + test2 + test3) / 3); 
     }
     
     public String validateData(){ 

@@ -47,15 +47,15 @@ public class StudentInterface {
         
         //print the name of the student with the highest score 
         if (stu1.getHighScore() >= stu2.getHighScore()){ 
-            System.out.format("The name of the student with the highscore is %s ", stu1.getName());
+            System.out.format("The name of the student with the highest score is %s.\n", stu1.getName());
         } else { 
-            System.out.format("The name of the student with the highscore is %s ", stu2.getName()); 
+            System.out.format("The name of the student with the highest score is %s.\n", stu2.getName()); 
         }
         //print the highest average of both students
         if (stu1.getAverage() >= stu2.getAverage()){ 
-            System.out.format("The name of the student with the highest average is %.s ", stu1.getName());
+            System.out.format("The name of the student with the highest average is %s.\n", stu1.getName());
         } else {
-            System.out.format("The name of the student with the highest average is %.s ", stu2.getName()); 
+            System.out.format("The name of the student with the highest average is %s.\n", stu2.getName()); 
         }
     }
 }
