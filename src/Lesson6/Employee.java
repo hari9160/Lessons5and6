@@ -40,7 +40,7 @@ public class Employee {
     //2) Sends a signal back to client class to let it know if property was set or not 
     
     public boolean setName(String nm){ 
-        boolean nameblank = name.equals(""); 
+        boolean nameblank = nm.equals(""); 
         if(nameblank) return false; 
         else{ 
             name = nm; 
@@ -87,5 +87,6 @@ public class Employee {
             pay = hours * rate; 
         
         return pay; 
+        
     }
 }
